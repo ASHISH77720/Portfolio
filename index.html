@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Playfair:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e877a7111.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h3>Hi, I'm Ashish</h3>
+                <h1>Web Developer</h1>
+                <h3> <span class="text"></span></h3>
+                <p>I'm a web developer with extensive experience for over 3 years.
+                    <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+                <div class="social-icons-header">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="btn-box">
+                    <a href="#">Hire Me </a>
+                    <a href="#">Lets Talk</a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- -----------------about----------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/image/ccccc.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <h3 style="font-size: 25px;">(Software engineer) Ashish Baheshwar Full satck Web developer in IGEC sagar. I have done my B.tech Degree in Information Technology from government Indira Gandhi Engineering College Sagar M.P.</h3>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('technology')">TECHNOLOGY</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <p >Programming:-</p>
+                    <br>
+                        <ul>
+                           <li>C Programming</li>
+                           <li>C++ Programming</li>
+                           <li>Python Programming</li>
+                           <li>Java script</li>
+                        </ul><br>
+
+                        <p style="font-weight: bold; color: aqua; font-size: 30px;">Freameworks:-</p>
+                        <br>
+                            <ul>
+                               <li>HTML5</li>
+                               <li>CSS</li>
+                               <li>Bootstrape</li>
+                               <li>Django</li>
+                            </ul><br>
+
+                         <p>Database:-</p>
+                         <br>
+                            <ul>
+                                <li>Mongo DB</li>
+                                <li>PHP</li>
+                                 
+                            </ul>
+                    </div>
+                    <div class="tab-contents" id="technology">
+                        <ul>
+                            <p style="font-weight: bold; color: aqua; font-size: 30px;">Technology:-</p><br>
+                            <li style="font-weight: bold; font-size: 25px; color: aqua;">Python</li>
+                            <p>My Prior programming language is python because its learning is very easy and syntax are very easy to implement . I practiced it a lot and made several project with the help of python and other frameworks too .</p>
+                            <li style="font-weight: bold; font-size: 25px;">Data Structure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><p >SECONDARY SCHOOL CERTIFICATE</p>
+                                <br>
+                                <p>2018</p>
+                                <h3>Govt High School Takhla Kalan,Seoni(m.p.)</h3>
+                                <br><h3>Percentage -85.40</h3>
+                                <br>
+                                <!-- Board of secendary Education Bhopal -->
+                            </li><br>
+                            <li>
+                                <p>HIGHER SECONDARY CERTIFICATE</p>
+                                <br>
+                                <p>2020</p>
+                                <h3>Govt High School Takhla Kalan,Seoni(m.p.)</h3>
+                                <br><h3>Percentage -79.00</h3>
+                                <br>
+                                 <!-- Board of secendary Education Bhopal -->
+                            </li><br>
+                            <!-- <li>
+                                <p style="font-weight: bold; color: aqua; font-size: 20px;">Joint Entrance Examination</p>
+                                <br>
+                                 Percentage -83.33
+                                <br>
+                                 National Testing Education Delhi
+                            </li><br> -->
+                            <li> <p>BACHELORS OF TECHNOLOGY</p>
+                                 <br>
+                                 <p>2020-2024</p>
+                                 <br>
+                                <H3>INDIRA GANDHI ENGINEERING COLLEGE(SAGAR, M.P)</H3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- ----------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/image/work1.jpg">
+                    <div class="layer">
+                        <h3>Sociol Media App</h3>
+                        <p>The app connects you to th talented people around the world. Dowenload it form play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/image/work2.jpg">
+                    <div class="layer">
+                        <h3>web design </h3>
+                        <p>The app connects you to th talented people around the world. Dowenload it form play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/image/work 3.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to th talented people around the world. Dowenload it form play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------contect------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ashishbaheshwar3@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> 7772065607</p>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Seoni(m.p.)</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/image/MANOJ CHSL.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Massage" rows="6" placeholder="your massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Portfolio created by ashish with <i class="fa-solid fa-heart"></i> easy tutorials </p>
+        </div>
+    </div>
+
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
